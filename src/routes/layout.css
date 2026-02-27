@@ -18,6 +18,17 @@
   --color-light-bg: var(--color-light-bg);
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
+
+  /* Aceternity Required Colors */
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-zinc-800: #27272a;
 }
 
 @layer base {

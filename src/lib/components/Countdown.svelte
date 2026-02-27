@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import BackgroundGradient from "$lib/components/ui/BackgroundGradient.svelte";
 
     let days = $state("00");
     let hours = $state("00");
@@ -42,70 +43,93 @@
     });
 </script>
 
-<section id="countdown" class="py-20 px-[5%] bg-[#efebe9] text-center">
+<section id="countdown" class="py-20 px-[5%] bg-white text-center">
     <div class="max-w-[800px] mx-auto reveal">
-        <h2 class="font-heading text-[2.5rem] text-[#5d4037] mb-12">
+        <h2 class="font-heading text-[2.5rem] text-[#5d4037] mb-4">
             The Celebration Begins In
         </h2>
+        <p class="text-[#8d6e63] mb-12 tracking-widest text-sm uppercase">
+            March 25, 2026 · Guruvayur
+        </p>
 
         {#if isOver}
             <h3 class="font-heading text-3xl text-[#8d6e63]">
-                The Celebration Has Begun!
+                The Celebration Has Begun! 🎉
             </h3>
         {:else}
-            <div class="flex justify-center flex-wrap gap-8 max-md:gap-4">
-                <div
-                    class="bg-white w-[100px] h-[100px] max-md:w-[80px] max-md:h-[80px] flex flex-col justify-center items-center rounded-xl shadow-[0_5px_15px_rgba(0,0,0,0.05)]"
+            <div class="flex justify-center flex-wrap gap-6 max-md:gap-4">
+                <BackgroundGradient
+                    containerClassName="rounded-2xl"
+                    className="bg-white"
                 >
-                    <span
-                        class="text-[2.5rem] max-md:text-[1.8rem] font-semibold text-[#5d4037] font-heading"
-                        >{days}</span
+                    <div
+                        class="w-[110px] h-[110px] max-md:w-[80px] max-md:h-[80px] flex flex-col justify-center items-center rounded-2xl"
                     >
-                    <p
-                        class="text-sm max-md:text-xs uppercase tracking-[1px] text-[#8d6e63]"
-                    >
-                        Days
-                    </p>
-                </div>
-                <div
-                    class="bg-white w-[100px] h-[100px] max-md:w-[80px] max-md:h-[80px] flex flex-col justify-center items-center rounded-xl shadow-[0_5px_15px_rgba(0,0,0,0.05)]"
+                        <span
+                            class="text-[2.5rem] max-md:text-[1.8rem] font-semibold text-[#5d4037] font-heading"
+                            >{days}</span
+                        >
+                        <p
+                            class="text-sm max-md:text-xs uppercase tracking-[1px] text-[#8d6e63]"
+                        >
+                            Days
+                        </p>
+                    </div>
+                </BackgroundGradient>
+                <BackgroundGradient
+                    containerClassName="rounded-2xl"
+                    className="bg-white"
                 >
-                    <span
-                        class="text-[2.5rem] max-md:text-[1.8rem] font-semibold text-[#5d4037] font-heading"
-                        >{hours}</span
+                    <div
+                        class="w-[110px] h-[110px] max-md:w-[80px] max-md:h-[80px] flex flex-col justify-center items-center rounded-2xl"
                     >
-                    <p
-                        class="text-sm max-md:text-xs uppercase tracking-[1px] text-[#8d6e63]"
-                    >
-                        Hours
-                    </p>
-                </div>
-                <div
-                    class="bg-white w-[100px] h-[100px] max-md:w-[80px] max-md:h-[80px] flex flex-col justify-center items-center rounded-xl shadow-[0_5px_15px_rgba(0,0,0,0.05)]"
+                        <span
+                            class="text-[2.5rem] max-md:text-[1.8rem] font-semibold text-[#5d4037] font-heading"
+                            >{hours}</span
+                        >
+                        <p
+                            class="text-sm max-md:text-xs uppercase tracking-[1px] text-[#8d6e63]"
+                        >
+                            Hours
+                        </p>
+                    </div>
+                </BackgroundGradient>
+                <BackgroundGradient
+                    containerClassName="rounded-2xl"
+                    className="bg-white"
                 >
-                    <span
-                        class="text-[2.5rem] max-md:text-[1.8rem] font-semibold text-[#5d4037] font-heading"
-                        >{minutes}</span
+                    <div
+                        class="w-[110px] h-[110px] max-md:w-[80px] max-md:h-[80px] flex flex-col justify-center items-center rounded-2xl"
                     >
-                    <p
-                        class="text-sm max-md:text-xs uppercase tracking-[1px] text-[#8d6e63]"
-                    >
-                        Minutes
-                    </p>
-                </div>
-                <div
-                    class="bg-white w-[100px] h-[100px] max-md:w-[80px] max-md:h-[80px] flex flex-col justify-center items-center rounded-xl shadow-[0_5px_15px_rgba(0,0,0,0.05)]"
+                        <span
+                            class="text-[2.5rem] max-md:text-[1.8rem] font-semibold text-[#5d4037] font-heading"
+                            >{minutes}</span
+                        >
+                        <p
+                            class="text-sm max-md:text-xs uppercase tracking-[1px] text-[#8d6e63]"
+                        >
+                            Minutes
+                        </p>
+                    </div>
+                </BackgroundGradient>
+                <BackgroundGradient
+                    containerClassName="rounded-2xl"
+                    className="bg-white"
                 >
-                    <span
-                        class="text-[2.5rem] max-md:text-[1.8rem] font-semibold text-[#5d4037] font-heading"
-                        >{seconds}</span
+                    <div
+                        class="w-[110px] h-[110px] max-md:w-[80px] max-md:h-[80px] flex flex-col justify-center items-center rounded-2xl"
                     >
-                    <p
-                        class="text-sm max-md:text-xs uppercase tracking-[1px] text-[#8d6e63]"
-                    >
-                        Seconds
-                    </p>
-                </div>
+                        <span
+                            class="text-[2.5rem] max-md:text-[1.8rem] font-semibold text-[#5d4037] font-heading"
+                            >{seconds}</span
+                        >
+                        <p
+                            class="text-sm max-md:text-xs uppercase tracking-[1px] text-[#8d6e63]"
+                        >
+                            Seconds
+                        </p>
+                    </div>
+                </BackgroundGradient>
             </div>
         {/if}
     </div>
