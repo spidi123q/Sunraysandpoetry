@@ -46,20 +46,20 @@
         </li>
         <li>
             <a
+                href="#timeline"
+                class="text-[#3e2723] font-medium text-sm uppercase tracking-[1px] transition-colors hover:text-[#8d6e63] {scrolled
+                    ? 'text-[#5d4037]'
+                    : ''} max-md:text-2xl"
+                onclick={closeMenu}>Itinerary</a
+            >
+        </li>
+        <li>
+            <a
                 href="#invitation"
                 class="text-[#3e2723] font-medium text-sm uppercase tracking-[1px] transition-colors hover:text-[#8d6e63] {scrolled
                     ? 'text-[#5d4037]'
                     : ''} max-md:text-2xl"
                 onclick={closeMenu}>Invitation</a
-            >
-        </li>
-        <li>
-            <a
-                href="#events"
-                class="text-[#3e2723] font-medium text-sm uppercase tracking-[1px] transition-colors hover:text-[#8d6e63] {scrolled
-                    ? 'text-[#5d4037]'
-                    : ''} max-md:text-2xl"
-                onclick={closeMenu}>Events</a
             >
         </li>
         <li>

@@ -2,7 +2,7 @@
     import Navbar from "$lib/components/Navbar.svelte";
     import Hero from "$lib/components/Hero.svelte";
     import Invitation from "$lib/components/Invitation.svelte";
-    import Events from "$lib/components/Events.svelte";
+    import Timeline from "$lib/components/Timeline.svelte";
     import Countdown from "$lib/components/Countdown.svelte";
     import Footer from "$lib/components/Footer.svelte";
     import { onMount } from "svelte";
@@ -34,7 +34,11 @@
         content="Join us in celebrating the marriage of Suraj Kiran and Kavitha on March 25, 2026."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin="anonymous"
+    />
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap"
         rel="stylesheet"
@@ -45,8 +49,8 @@
 
 <main>
     <Hero />
+    <Timeline />
     <Invitation />
-    <Events />
     <Countdown />
 </main>
 
