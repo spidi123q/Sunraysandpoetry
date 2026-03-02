@@ -23,15 +23,21 @@ const Hero = () => {
         </motion.div>
 
         {/* Text Section */}
+
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-center space-y-2"
+          className="text-center space-y-4"
         >
-          <h1 className="text-4xl md:text-6xl font-serif text-rose-900 tracking-wide">
-            മീനത്തിൽ താലികെട്ട്
-          </h1>
+          <div className="space-y-2">
+            <h1 className="text-4xl md:text-6xl font-serif text-rose-900 tracking-wide">
+              മീനത്തിൽ താലികെട്ട്
+            </h1>
+            <h2 className="text-2xl md:text-4xl font-serif text-rose-800 py-5">
+              Suraj weds Kavitha
+            </h2>
+          </div>
           <p className="text-lg md:text-xl text-rose-700 font-light tracking-widest uppercase">
             March 25, 2026
           </p>
