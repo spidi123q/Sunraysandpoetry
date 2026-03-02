@@ -38,39 +38,6 @@
                         /></svg
                     >
                 </CardItem>
-
-                <div class="my-8 w-full">
-                    <CardItem
-                        translateZ={30}
-                        {isMouseEntered}
-                        className="w-full text-center"
-                    >
-                        <p
-                            class="font-heading text-[2rem] text-[#5d4037] mb-2 font-semibold"
-                        >
-                            Mr Suresh & Mrs Chandini
-                        </p>
-                    </CardItem>
-                    <CardItem
-                        translateZ={20}
-                        {isMouseEntered}
-                        className="w-full text-center"
-                    >
-                        <p class="text-base text-gray-600 italic">
-                            Ayyathuvalappil House, Karukaputhoor, Palakkad
-                        </p>
-                    </CardItem>
-                </div>
-
-                <CardItem
-                    translateZ={40}
-                    {isMouseEntered}
-                    className="w-full text-[1.2rem] my-8 leading-[1.8] text-[#3e2723] font-medium tracking-wide text-center"
-                >
-                    We cordially invite you to celebrate<br />the marriage of
-                    our son
-                </CardItem>
-
                 <CardItem
                     translateZ={80}
                     {isMouseEntered}
@@ -87,37 +54,6 @@
                         Kavitha
                     </h2>
                 </CardItem>
-
-                <CardItem
-                    translateZ={40}
-                    {isMouseEntered}
-                    className="w-full text-[1.2rem] my-8 leading-[1.8] text-[#3e2723] font-medium tracking-wide text-center"
-                >
-                    Daughter of
-                </CardItem>
-
-                <div class="my-8 w-full">
-                    <CardItem
-                        translateZ={30}
-                        {isMouseEntered}
-                        className="w-full text-center"
-                    >
-                        <p
-                            class="font-heading text-[2rem] text-[#5d4037] mb-2 font-semibold"
-                        >
-                            Dr Hariprakash & Dr Jayasree
-                        </p>
-                    </CardItem>
-                    <CardItem
-                        translateZ={20}
-                        {isMouseEntered}
-                        className="w-full text-center"
-                    >
-                        <p class="text-base text-gray-600 italic">
-                            Madathil, Kandalloor South, Kayamkulam
-                        </p>
-                    </CardItem>
-                </div>
             </CardBody>
         </CardContainer>
     </div>
