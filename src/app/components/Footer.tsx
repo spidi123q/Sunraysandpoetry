@@ -15,7 +15,7 @@ const Footer = () => {
           <span>@sunraysandpoetry</span>
         </a>
         <p className="mt-8 text-xs text-rose-400 uppercase tracking-widest">
-          With Love
+          Made with <span className="text-rose-600">❤️</span> by Kavitha & SUraj
         </p>
       </div>
     </footer>
