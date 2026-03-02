@@ -30,7 +30,7 @@ const Hero = () => {
           className="text-center space-y-2"
         >
           <h1 className="text-4xl md:text-6xl font-serif text-rose-900 tracking-wide">
-            Meenathil Thaalikettu
+            മീനത്തിൽ താലികെട്ട്
           </h1>
           <p className="text-lg md:text-xl text-rose-700 font-light tracking-widest uppercase">
             March 25, 2026
