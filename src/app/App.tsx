@@ -14,7 +14,7 @@ export default function App() {
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'center 68%',
           backgroundRepeat: 'no-repeat',
         }}
       />
