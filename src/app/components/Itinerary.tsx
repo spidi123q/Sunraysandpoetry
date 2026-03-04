@@ -1,5 +1,6 @@
-import { MapPin, Clock, Music, Palette, Shirt, PartyPopper, CalendarDays } from "lucide-react";
+import { MapPin, Clock, Music, Palette, Shirt, PartyPopper, CalendarDays,Flower } from "lucide-react";
 import { motion } from "motion/react";
+import ThaaliIcon from "./ThaaliIcon";
 
 interface Event {
   date: string;
@@ -43,7 +44,7 @@ const events: Event[] = [
     locationUrl: "https://maps.app.goo.gl/Gp7gNSWLSHfANLsg6",
     time: "10:00 AM",
     dressCode: "Temple vibe (Kasavu preferred)",
-    icon: CalendarDays,
+    icon: ThaaliIcon,
   },
   {
     date: "25th March 2026 (Afternoon)",
@@ -52,7 +53,7 @@ const events: Event[] = [
     locationUrl: "https://maps.app.goo.gl/cxGdcZmmo3VhUMgi8?g_st=ic",
     time: "4:00 PM",
     dressCode: "Peach, Pink, Sandal shades preferred",
-    icon: PartyPopper,
+    icon: Flower,
   },
   {
     date: "25th March 2026 (Night)",
